@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="obsidian">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayush Thakur (UID: 25BAI10052) — Computer Science & Engineering (AI & ML) undergraduate at Chandigarh University. Systems portfolio and interactive COA Computer Architecture Workbench.">
+  <meta name="keywords" content="Ayush Thakur, 25BAI10052, Chandigarh University, Computer Architecture, COA, Number System Converter, Register Visualizer, AI Systems, Machine Learning">
+  <meta name="author" content="Ayush Thakur">
+  <title>Ayush Thakur | Systems & AI Portfolio | Chandigarh University (25BAI10052)</title>
+  
+  <!-- Premium Typography: Plus Jakarta Sans, Outfit, and JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Architectural Background Atmosphere -->
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+  <div class="ambient-glow-mesh" id="ambientMesh" aria-hidden="true"></div>
+
+  <!-- ======================================================== -->
+  <!-- NAVIGATION BAR                                           -->
+  <!-- ======================================================== -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-monogram">AT</span>
+        <div class="brand-meta">
+          <span class="brand-name">Ayush Thakur</span>
+          <span class="brand-badge">UID: 25BAI10052 &bull; CU</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Overview</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Competencies</a></li>
+          <li class="nav-item"><a href="#coa-converter" class="nav-link accent-link">COA Converter</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!-- Refined Theme Switcher -->
+          <button id="themeToggleBtn" class="btn-icon" title="Toggle Theme (Obsidian / Emerald / Titanium)" aria-label="Toggle Theme">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+
+          <!-- GitHub Profile -->
+          <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn-icon" title="GitHub Profile (@kurayu0)" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================== -->
+    <!-- SECTION 1: HERO & HARDWARE WORKBENCH                     -->
+    <!-- ======================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-layout">
+        
+        <!-- Left: Personal Pitch & Credentials -->
+        <div class="hero-intro">
+          <div class="academic-status-pill">
+            <span class="status-dot"></span>
+            <span>CHANDIGARH UNIVERSITY &bull; UID: <strong>25BAI10052</strong></span>
+          </div>
+
+          <h1 class="hero-heading">
+            Engineering at the confluence of <span class="text-gradient">Hardware Architecture</span> &amp; Modern AI.
+          </h1>
+
+          <p class="hero-description">
+            Hi, I'm <strong>Ayush Thakur</strong>. I'm a Computer Science &amp; Engineering undergraduate specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong> at Chandigarh University. My focus bridges low-level machine organization, memory hierarchies, and algorithmic optimization with real-world intelligent systems.
+          </p>
+
+          <!-- Clean Identity Strip -->
+          <div class="credentials-row">
+            <div class="cred-item">
+              <span class="cred-label">Program &bull; Specialization</span>
+              <span class="cred-val">B.E. CSE (Artificial Intelligence)</span>
+            </div>
+            <div class="cred-item">
+              <span class="cred-label">Core Systems Subject</span>
+              <span class="cred-val">Comp. Organization &amp; Architecture (COA)</span>
+            </div>
+            <div class="cred-item">
+              <span class="cred-label">Campus</span>
+              <span class="cred-val">Chandigarh University, Mohali</span>
+            </div>
+          </div>
+
+          <!-- Hero Actions -->
+          <div class="hero-actions">
+            <a href="#coa-converter" class="btn btn-primary">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+                <line x1="15" y1="9" x2="9" y2="15"></line>
+              </svg>
+              <span>COA Converter</span>
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <span>View Projects</span>
+            </a>
+            <a href="#about" class="btn btn-outline">
+              <span>Biography &amp; CV</span>
+            </a>
+          </div>
+
+          <!-- Social Strip -->
+          <div class="social-strip">
+            <span class="social-strip-label">Reach out:</span>
+            <a href="mailto:ayush.thakur@cumail.in" class="social-link-chip">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>ayush.thakur@cumail.in</span>
+            </a>
+            <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="social-link-chip" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Real Hardware Architecture & ALU Workbench Card -->
+        <div class="hero-workbench-card">
+          <div class="wb-header">
+            <div class="wb-title-group">
+              <span class="wb-indicator"></span>
+              <span class="wb-title">CPU_DATAPATH_SIM &bull; COA LAB</span>
+            </div>
+            <span class="wb-badge">8-BIT BUS CLK: 1.0 MHz</span>
+          </div>
+
+          <div class="wb-body">
+            <!-- Live Registers -->
+            <div class="wb-datapath-grid">
+              <div class="wb-register-cell">
+                <span class="wb-reg-name">Register A (RegA)</span>
+                <span class="wb-reg-val" id="heroRegA">0b10101010 [170]</span>
+              </div>
+              <div class="wb-register-cell">
+                <span class="wb-reg-name">Register B (RegB)</span>
+                <span class="wb-reg-val" id="heroRegB">0b01010101 [85]</span>
+              </div>
+              <div class="wb-register-cell">
+                <span class="wb-reg-name">Accumulator (ACC)</span>
+                <span class="wb-reg-val highlight" id="heroRegAcc">0b11111111 [255]</span>
+              </div>
+              <div class="wb-register-cell">
+                <span class="wb-reg-name">Status Flags [Z, C, S]</span>
+                <span class="wb-reg-val" id="heroRegFlags">Z:0 &bull; C:0 &bull; S:1</span>
+              </div>
+            </div>
+
+            <!-- Interactive Mini ALU Operation Switcher -->
+            <div class="wb-alu-panel">
+              <div class="wb-alu-header">
+                <span>Interactive ALU Function Unit</span>
+                <span id="heroAluOpName">Bitwise OR (|)</span>
+              </div>
+              <div class="alu-op-buttons">
+                <button type="button" class="alu-btn" data-op="AND">AND (&amp;)</button>
+                <button type="button" class="alu-btn active" data-op="OR">OR (|)</button>
+                <button type="button" class="alu-btn" data-op="ADD">ADD (+)</button>
+                <button type="button" class="alu-btn" data-op="XOR">XOR (^)</button>
+              </div>
+              <div class="wb-alu-result">
+                <span>ALU Output:</span>
+                <strong id="heroAluFormula">RegA | RegB = 255 (0xFF)</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="wb-footer">
+            <span>Chandigarh University &bull; UID: 25BAI10052</span>
+            <span>Architecture: Von Neumann</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 2: COA NUMBER SYSTEM CONVERTER (CLEAN & SIMPLE)  -->
+    <!-- ======================================================== -->
+    <section id="coa-converter" class="section coa-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg>
+            Computer Architecture &bull; COA Tool
+          </span>
+          <h2 class="section-title">Number System <span class="text-gradient">Converter</span></h2>
+          <p class="section-subtitle">
+            Instantly convert values between Decimal, Binary, Octal, and Hexadecimal.
+          </p>
+        </div>
+
+        <div class="simple-converter-card">
+          
+          <!-- Presets Bar -->
+          <div class="simple-presets-bar">
+            <span class="presets-label">Quick Presets:</span>
+            <div class="presets-buttons">
+              <button type="button" class="preset-pill" data-val="1010" data-from="binary" data-to="decimal">1010 (Bin &rarr; Dec)</button>
+              <button type="button" class="preset-pill" data-val="255" data-from="decimal" data-to="hexadecimal">255 (Dec &rarr; Hex)</button>
+              <button type="button" class="preset-pill" data-val="77" data-from="octal" data-to="decimal">77 (Oct &rarr; Dec)</button>
+              <button type="button" class="preset-pill" data-val="1A3" data-from="hexadecimal" data-to="decimal">1A3 (Hex &rarr; Dec)</button>
+              <button type="button" class="preset-pill" data-val="10.625" data-from="decimal" data-to="binary">10.625 (Fraction)</button>
+              <button type="button" class="preset-pill" data-val="-42" data-from="decimal" data-to="binary">-42 (Negative)</button>
+            </div>
+            <button type="button" id="resetConverterBtn" class="reset-link-btn" title="Clear input">Reset</button>
+          </div>
+
+          <!-- Main Input / Output Row -->
+          <div class="simple-io-grid">
+            
+            <!-- From Box -->
+            <div class="simple-box">
+              <div class="simple-box-header">
+                <label for="primaryConverterInput" class="simple-label">From</label>
+                <select id="sourceRadixSelect" class="simple-select" aria-label="Select source base">
+                  <option value="decimal" selected>Decimal (Base 10)</option>
+                  <option value="binary">Binary (Base 2)</option>
+                  <option value="octal">Octal (Base 8)</option>
+                  <option value="hexadecimal">Hexadecimal (Base 16)</option>
+                </select>
+              </div>
+              <input 
+                type="text" 
+                id="primaryConverterInput" 
+                class="simple-input" 
+                placeholder="Enter number (e.g. 255, 1010, 0xFF, 10.5)..." 
+                value="255"
+                autocomplete="off"
+                spellcheck="false"
+              >
+              <div id="validationNotice" class="simple-validation-hint">Valid symbols: 0 to 9 (Decimals &amp; negatives supported)</div>
+            </div>
+
+            <!-- Swap Button -->
+            <button type="button" id="swapRadixBtn" class="simple-swap-btn" title="Swap input and output bases" aria-label="Swap bases">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 16V4m0 0L3 8m4-4l4 4"></path>
+                <path d="M17 8v12m0 0l4-4m-4 4l-4-4"></path>
+              </svg>
+            </button>
+
+            <!-- To Box -->
+            <div class="simple-box">
+              <div class="simple-box-header">
+                <label for="primaryConverterOutput" class="simple-label">To</label>
+                <select id="targetRadixSelect" class="simple-select" aria-label="Select target base">
+                  <option value="binary" selected>Binary (Base 2)</option>
+                  <option value="decimal">Decimal (Base 10)</option>
+                  <option value="octal">Octal (Base 8)</option>
+                  <option value="hexadecimal">Hexadecimal (Base 16)</option>
+                </select>
+              </div>
+              <div class="simple-output-wrap">
+                <div id="primaryConverterOutput" class="simple-output-display" tabindex="0">11111111</div>
+                <button type="button" id="copyResultBtn" class="simple-copy-btn" title="Copy result">
+                  <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="copyBtnLabel">Copy</span>
+                </button>
+              </div>
+              <div class="simple-output-meta" id="outputDigitCounter">Length: 8 bits</div>
+            </div>
+
+          </div>
+
+          <!-- Prominent Convert Action Bar -->
+          <div class="simple-action-row">
+            <button type="button" id="convertBtn" class="btn btn-primary convert-trigger-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <polyline points="1 20 1 14 7 14"></polyline>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </svg>
+              <span>Convert Number</span>
+            </button>
+          </div>
+
+
+          <!-- All Bases Live Readout -->
+          <div class="simple-readout-divider">
+            <span>Simultaneous Conversion Across All 4 Systems:</span>
+          </div>
+
+          <div class="simple-readout-grid">
+            <div class="readout-card" data-copy-target="matrixValDec" data-base="decimal" title="Click to copy Decimal (or set as target)">
+              <div class="readout-top">
+                <span class="readout-base">Decimal (10)</span>
+                <span class="readout-copy-icon">📋</span>
+              </div>
+              <span class="readout-val" id="matrixValDec">255</span>
+            </div>
+
+            <div class="readout-card" data-copy-target="matrixValBin" data-base="binary" title="Click to copy Binary (or set as target)">
+              <div class="readout-top">
+                <span class="readout-base">Binary (2)</span>
+                <span class="readout-copy-icon">📋</span>
+              </div>
+              <span class="readout-val" id="matrixValBin">11111111</span>
+            </div>
+
+            <div class="readout-card" data-copy-target="matrixValOct" data-base="octal" title="Click to copy Octal (or set as target)">
+              <div class="readout-top">
+                <span class="readout-base">Octal (8)</span>
+                <span class="readout-copy-icon">📋</span>
+              </div>
+              <span class="readout-val" id="matrixValOct">377</span>
+            </div>
+
+            <div class="readout-card" data-copy-target="matrixValHex" data-base="hexadecimal" title="Click to copy Hexadecimal (or set as target)">
+              <div class="readout-top">
+                <span class="readout-base">Hexadecimal (16)</span>
+                <span class="readout-copy-icon">📋</span>
+              </div>
+              <span class="readout-val" id="matrixValHex">FF</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 3: ABOUT ME (AUTHENTIC BENTO)                    -->
+    <!-- ======================================================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Profile &amp; Background</span>
+          <h2 class="section-title">About <span class="text-gradient">Ayush Thakur</span></h2>
+          <p class="section-subtitle">
+            An engineering perspective rooted in foundational computer architecture and high-performance computing at Chandigarh University.
+          </p>
+        </div>
+
+        <div class="about-bento-grid">
+          <!-- Card 1: Biography & Focus -->
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <h3 class="bento-title">Background &amp; Philosophy</h3>
+                <span class="bento-tagline">B.E. CSE &bull; Artificial Intelligence &bull; CU</span>
+              </div>
+            </div>
+
+            <p class="bento-text">
+              I am an engineering student at <strong>Chandigarh University (UID: 25BAI10052)</strong> fascinated by how abstract software principles translate into physical transistors and clock cycles. Having completed my Class 10th and Class 12th schooling from <strong>Army Public School Chandimandir</strong> with a strong foundation in Science &amp; Mathematics, I am dedicated to bridging low-level computation with cutting-edge artificial intelligence.
+            </p>
+            <p class="bento-text">
+              Too often, modern machine learning and high-level software development overlook the underlying computational constraints. My goal is to build deep mastery of both worlds: understanding cache hierarchies, memory alignment, pipeline hazards, and number systems in <strong>Computer Organization &amp; Architecture (COA)</strong>, while engineering scalable neural architectures in PyTorch and building responsive software.
+            </p>
+            <p class="bento-text">
+              Whether optimizing matrix multiplication operations or building educational interactive tools for university peers, I value mathematical clarity, deterministic behavior, and clean code craftsmanship.
+            </p>
+          </div>
+
+          <!-- Card 2: Principles & CV Download -->
+          <div class="bento-card">
+            <div class="bento-header">
+              <div class="bento-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h3 class="bento-title">Engineering Tenets</h3>
+                <span class="bento-tagline">How I approach computational problems</span>
+              </div>
+            </div>
+
+            <div class="values-checklist">
+              <div class="value-item">
+                <span class="value-bullet">&bull;</span>
+                <div>
+                  <strong>Hardware-Aware Design:</strong> Respecting cache boundaries, instruction latency, and memory access overhead.
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-bullet">&bull;</span>
+                <div>
+                  <strong>Mathematical Grounding:</strong> Applying discrete mathematics and boolean logic rather than superficial trial-and-error.
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-bullet">&bull;</span>
+                <div>
+                  <strong>Open Scientific Learning:</strong> Writing clean documentation and building interactive tools to help others understand architecture.
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div class="resume-download-card">
+              <div class="resume-details">
+                <span class="resume-title">Curriculum Vitae</span>
+                <span class="resume-sub">Ayush_Thakur_25BAI10052_CV.pdf</span>
+              </div>
+              <a href="assets/cv.pdf" target="_blank" rel="noopener noreferrer" id="downloadCvBtn" class="btn btn-primary btn-sm" download="Ayush_Thakur_25BAI10052_CV.pdf">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 4: TECHNICAL COMPETENCIES                       -->
+    <!-- ======================================================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Core Technical Toolkit</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Competencies</span></h2>
+          <p class="section-subtitle">
+            Categorized overview of computational skills across systems architecture, machine learning, programming languages, and tooling.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Domain 1: COA & Systems Architecture -->
+          <div class="skill-domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                  <line x1="9" y1="9" x2="15" y2="15"></line>
+                  <line x1="15" y1="9" x2="9" y2="15"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="domain-title">Computer Architecture</h3>
+                <span class="domain-sub">COA Laboratory</span>
+              </div>
+            </div>
+            <div class="skill-pills-flow">
+              <span class="skill-pill priority">Number Systems (Radix)</span>
+              <span class="skill-pill priority">2's Complement Arithmetic</span>
+              <span class="skill-pill">ALU &amp; CPU Datapath</span>
+              <span class="skill-pill">Instruction Cycle</span>
+              <span class="skill-pill">Cache Memory &amp; RAM</span>
+              <span class="skill-pill">Logic Gates &amp; MUX</span>
+              <span class="skill-pill">Registers &amp; Flip-Flops</span>
+              <span class="skill-pill">RISC vs CISC Architecture</span>
+            </div>
+          </div>
+
+          <!-- Domain 2: AI & Machine Learning -->
+          <div class="skill-domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2a8 8 0 0 0-8 8c0 3.37 2.08 6.26 5.06 7.42-.04.28-.06.56-.06.85 0 2.21 1.79 4 4 4s4-1.79 4-4c0-.29-.02-.57-.06-.85A8.006 8.006 0 0 0 12 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="domain-title">AI &amp; Machine Learning</h3>
+                <span class="domain-sub">Degree Specialization</span>
+              </div>
+            </div>
+            <div class="skill-pills-flow">
+              <span class="skill-pill priority">Supervised Learning</span>
+              <span class="skill-pill priority">Neural Network Modeling</span>
+              <span class="skill-pill">Natural Language Processing</span>
+              <span class="skill-pill">Computer Vision</span>
+              <span class="skill-pill">PyTorch &amp; TensorFlow</span>
+              <span class="skill-pill">Scikit-Learn</span>
+              <span class="skill-pill">NumPy &amp; Pandas</span>
+              <span class="skill-pill">Model Evaluation Metrics</span>
+            </div>
+          </div>
+
+          <!-- Domain 3: Programming Languages -->
+          <div class="skill-domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="domain-title">Programming Languages</h3>
+                <span class="domain-sub">Core Implementation</span>
+              </div>
+            </div>
+            <div class="skill-pills-flow">
+              <span class="skill-pill priority">Python (Advanced)</span>
+              <span class="skill-pill priority">C / C++ (Data Structures)</span>
+              <span class="skill-pill">Java (Object-Oriented)</span>
+              <span class="skill-pill">JavaScript (ES6+)</span>
+              <span class="skill-pill">SQL Relational Queries</span>
+              <span class="skill-pill">Bash &amp; Shell Scripting</span>
+            </div>
+          </div>
+
+          <!-- Domain 4: Engineering & Tools -->
+          <div class="skill-domain-card">
+            <div class="domain-header">
+              <div class="domain-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                </svg>
+              </div>
+              <div>
+                <h3 class="domain-title">Developer &amp; Web Tools</h3>
+                <span class="domain-sub">Workflow &amp; Deployment</span>
+              </div>
+            </div>
+            <div class="skill-pills-flow">
+              <span class="skill-pill">Git &amp; GitHub Version Control</span>
+              <span class="skill-pill">Linux Environment (CLI)</span>
+              <span class="skill-pill">Modern HTML5 &amp; CSS3</span>
+              <span class="skill-pill">DOM APIs</span>
+              <span class="skill-pill">REST APIs &amp; FastAPI</span>
+              <span class="skill-pill">VS Code Debugging</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 5: PROJECTS CATALOG                             -->
+    <!-- ======================================================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Repositories</span>
+          <h2 class="section-title">Projects &amp; <span class="text-gradient">Implementations</span></h2>
+          <p class="section-subtitle">
+            A curated portfolio of software systems spanning digital architecture simulation, machine learning pipelines, and full-stack utilities.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="projects-filter-nav">
+          <button class="filter-tab active" data-filter="all">All Projects (6)</button>
+          <button class="filter-tab" data-filter="coa">COA &amp; Systems</button>
+          <button class="filter-tab" data-filter="ai">AI &amp; Machine Learning</button>
+          <button class="filter-tab" data-filter="web">Web &amp; Algorithms</button>
+        </div>
+
+        <div class="projects-cards-grid" id="projectsGrid">
+          
+          <!-- Project 1: COA Converter -->
+          <div class="repo-card" data-category="coa">
+            <div class="repo-top-row">
+              <span class="repo-arch-tag">COA &bull; Architecture Lab</span>
+              <a href="#coa-converter" class="repo-link-icon" title="View in Interactive Converter">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <h3 class="repo-title">COA Number System Converter</h3>
+            <p class="repo-desc">
+              Clean and direct educational tool providing real-time base conversion across Decimal, Binary, Octal, and Hexadecimal using JavaScript BigInt with character validation.
+            </p>
+            <div class="repo-tech-stack">
+              <span class="tech-chip">JavaScript (BigInt)</span>
+              <span class="tech-chip">COA Logic</span>
+              <span class="tech-chip">CSS Tokens</span>
+            </div>
+            <div class="repo-actions-footer">
+              <a href="#coa-converter" class="btn btn-primary repo-btn">Launch Tool</a>
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn btn-outline repo-btn">GitHub</a>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Chatbot -->
+          <div class="repo-card" data-category="ai">
+            <div class="repo-top-row">
+              <span class="repo-arch-tag">NLP &bull; Transformer</span>
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="repo-link-icon" title="View on GitHub (@kurayu0)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <h3 class="repo-title">Contextual Dialogue System</h3>
+            <p class="repo-desc">
+              Lightweight conversational agent implementing intent classification, contextual slot tracking, vector embeddings, and modular FastAPI endpoints with low-latency inference.
+            </p>
+            <div class="repo-tech-stack">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">PyTorch</span>
+              <span class="tech-chip">HuggingFace</span>
+              <span class="tech-chip">FastAPI</span>
+            </div>
+            <div class="repo-actions-footer">
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn btn-outline repo-btn">View Repository</a>
+            </div>
+          </div>
+
+          <!-- Project 3: Digital Logic Gate Simulator -->
+          <div class="repo-card" data-category="coa">
+            <div class="repo-top-row">
+              <span class="repo-arch-tag">Digital Logic &bull; Circuits</span>
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="repo-link-icon" title="View on GitHub (@kurayu0)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <h3 class="repo-title">Digital Logic Gate &amp; Adder Simulator</h3>
+            <p class="repo-desc">
+              Computational simulator modeling primary logic gates (AND, OR, NOT, XOR), Half Adders, Full Adders, and 4-to-1 Multiplexers with automated truth-table verification.
+            </p>
+            <div class="repo-tech-stack">
+              <span class="tech-chip">C++</span>
+              <span class="tech-chip">Boolean Logic</span>
+              <span class="tech-chip">Datapath</span>
+              <span class="tech-chip">Simulation</span>
+            </div>
+            <div class="repo-actions-footer">
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn btn-outline repo-btn">View Repository</a>
+            </div>
+          </div>
+
+          <!-- Project 4: Predictive ML Pipeline -->
+          <div class="repo-card" data-category="ai">
+            <div class="repo-top-row">
+              <span class="repo-arch-tag">Machine Learning &bull; Data</span>
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="repo-link-icon" title="View on GitHub (@kurayu0)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <h3 class="repo-title">Predictive Classifier &amp; Feature Pipeline</h3>
+            <p class="repo-desc">
+              End-to-end data pipeline containing feature normalization, missing value imputation, cross-validated ensemble models (RandomForest, XGBoost), and ROC/AUC performance benchmarking.
+            </p>
+            <div class="repo-tech-stack">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Scikit-Learn</span>
+              <span class="tech-chip">Pandas</span>
+              <span class="tech-chip">Matplotlib</span>
+            </div>
+            <div class="repo-actions-footer">
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn btn-outline repo-btn">View Repository</a>
+            </div>
+          </div>
+
+          <!-- Project 5: DSA Visualizer -->
+          <div class="repo-card" data-category="web">
+            <div class="repo-top-row">
+              <span class="repo-arch-tag">Algorithms &bull; Data Structures</span>
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="repo-link-icon" title="View on GitHub (@kurayu0)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <h3 class="repo-title">DSA Complexity &amp; Sorting Visualizer</h3>
+            <p class="repo-desc">
+              Interactive visualization engine for sorting algorithms (Quicksort, Mergesort) and Binary Search Trees. Explains worst-case time complexity, recursion stacks, and memory usage.
+            </p>
+            <div class="repo-tech-stack">
+              <span class="tech-chip">JavaScript</span>
+              <span class="tech-chip">HTML5 Canvas</span>
+              <span class="tech-chip">Big-O Analysis</span>
+            </div>
+            <div class="repo-actions-footer">
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn btn-outline repo-btn">View Repository</a>
+            </div>
+          </div>
+
+          <!-- Project 6: Chandigarh University Academic Platform -->
+          <div class="repo-card" data-category="web">
+            <div class="repo-top-row">
+              <span class="repo-arch-tag">Systems &bull; Web Platform</span>
+              <a href="#home" class="repo-link-icon" title="Current Site">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+            <h3 class="repo-title">Academic Portfolio &amp; COA Workbench</h3>
+            <p class="repo-desc">
+              High-performance personal engineering site built with vanilla web technologies, featuring bespoke dark aesthetics, zero framework overhead, and embedded interactive computer architecture tooling.
+            </p>
+            <div class="repo-tech-stack">
+              <span class="tech-chip">Semantic HTML5</span>
+              <span class="tech-chip">Vanilla CSS</span>
+              <span class="tech-chip">JavaScript (ES6+)</span>
+            </div>
+            <div class="repo-actions-footer">
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn btn-outline repo-btn">View Repository</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- GitHub Profile Banner -->
+        <div class="github-banner-card">
+          <div>
+            <h3 class="gh-banner-title">Explore more code repositories on GitHub</h3>
+            <p class="gh-banner-desc">Explore algorithmic problem-solving, university coursework code, and experimental models.</p>
+          </div>
+          <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <span>Visit @kurayu0 on GitHub</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 6: EDUCATION & TIMELINE                         -->
+    <!-- ======================================================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Trajectory</span>
+          <h2 class="section-title">Education &amp; <span class="text-gradient">Coursework</span></h2>
+          <p class="section-subtitle">
+            Formal foundations in Computer Science, Systems Engineering, and Mathematics.
+          </p>
+        </div>
+
+        <div class="education-timeline-spine">
+          
+          <!-- Item 1: Chandigarh University -->
+          <div class="edu-item">
+            <div class="edu-node current"></div>
+            <div class="edu-card">
+              <span class="edu-era">2025 – Present &bull; In Progress</span>
+              <h3 class="edu-degree">Bachelor of Engineering in Computer Science (CSE)</h3>
+              <div class="edu-uni"><strong>Chandigarh University (CU)</strong> &bull; Mohali, Punjab</div>
+              <p class="edu-desc">
+                Specialization in <strong>Artificial Intelligence &amp; Machine Learning</strong>. Coursework focuses on Computer Organization &amp; Architecture (COA), Discrete Mathematics, Algorithms &amp; Data Structures, Object-Oriented Programming, and Neural Foundations.
+              </p>
+              <div class="edu-pills">
+                <span class="edu-pill">Student UID: 25BAI10052</span>
+                <span class="edu-pill">COA Laboratory</span>
+                <span class="edu-pill">AI Specialization</span>
+                <span class="edu-pill">Data Structures</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Senior Secondary Schooling (Class 12th) -->
+          <div class="edu-item">
+            <div class="edu-node"></div>
+            <div class="edu-card">
+              <span class="edu-era">Senior Secondary &bull; Class XII (CBSE)</span>
+              <h3 class="edu-degree">Senior Secondary Education (Class 12th)</h3>
+              <div class="edu-uni"><strong>Army Public School Chandimandir</strong> &bull; Non-Medical (PCM)</div>
+              <p class="edu-desc">
+                Completed Class 12th under the CBSE curriculum with core focus on Advanced Mathematics, Physics, and Chemistry (PCM) alongside Computer Science. Developed rigorous quantitative thinking, scientific methodology, and analytical problem-solving skills that laid the bedrock for engineering and computer architecture.
+              </p>
+              <div class="edu-pills">
+                <span class="edu-pill">Army Public School Chandimandir</span>
+                <span class="edu-pill">Class 12th</span>
+                <span class="edu-pill">CBSE Board</span>
+                <span class="edu-pill">Science &amp; Mathematics (PCM)</span>
+                <span class="edu-pill">Computer Science</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Secondary Schooling (Class 10th) -->
+          <div class="edu-item">
+            <div class="edu-node"></div>
+            <div class="edu-card">
+              <span class="edu-era">Secondary School &bull; Class X (CBSE)</span>
+              <h3 class="edu-degree">Secondary School Examination (Class 10th)</h3>
+              <div class="edu-uni"><strong>Army Public School Chandimandir</strong></div>
+              <p class="edu-desc">
+                Completed Class 10th matriculation with distinction under the CBSE curriculum. Built strong fundamentals across Mathematics, Natural Sciences, Social Sciences, English, and Information Technology.
+              </p>
+              <div class="edu-pills">
+                <span class="edu-pill">Army Public School Chandimandir</span>
+                <span class="edu-pill">Class 10th</span>
+                <span class="edu-pill">CBSE Board</span>
+                <span class="edu-pill">Science &amp; Mathematics</span>
+                <span class="edu-pill">Information Technology</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- SECTION 7: CONTACT ME                                   -->
+    <!-- ======================================================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Connect with <span class="text-gradient">Ayush</span></h2>
+          <p class="section-subtitle">
+            Open to summer research, technical internships, open-source projects, and systems engineering discussions.
+          </p>
+        </div>
+
+        <div class="contact-hub-grid">
+          
+          <!-- Direct Channels -->
+          <div class="contact-direct-card">
+            <h3 class="contact-card-title">Direct Inquiries</h3>
+            <p class="contact-card-desc">
+              Feel free to reach out directly via academic email or social channels for project collaborations, technical inquiries, or questions about the COA tools.
+            </p>
+
+            <div class="contact-channels-list">
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">Academic Email</span>
+                  <a href="mailto:ayush.thakur@cumail.in" class="channel-val">ayush.thakur@cumail.in</a>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">Campus Location</span>
+                  <span class="channel-val">Chandigarh University, Mohali, Punjab</span>
+                </div>
+              </div>
+
+              <div class="contact-channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="3"></rect><circle cx="9" cy="10" r="2"></circle><line x1="15" y1="8" x2="17" y2="8"></line><line x1="15" y1="12" x2="17" y2="12"></line><line x1="7" y1="16" x2="17" y2="16"></line></svg>
+                </div>
+                <div class="channel-meta">
+                  <span class="channel-label">Institutional UID</span>
+                  <span class="channel-val">25BAI10052</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-strip">
+              <a href="https://github.com/kurayu0" target="_blank" rel="noopener noreferrer" class="social-link-chip" title="GitHub Profile (@kurayu0)">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-link-chip">
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:ayush.thakur@cumail.in" class="social-link-chip">
+                <span>Send Email</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-composer-card">
+            <h3 class="contact-card-title">Send a Message</h3>
+            <form id="contactForm" class="composer-form">
+              <div class="field-group">
+                <label for="senderName" class="field-label">Your Name</label>
+                <input type="text" id="senderName" class="field-input" placeholder="e.g. Dr. Jane Smith" required>
+              </div>
+
+              <div class="field-group">
+                <label for="senderEmail" class="field-label">Your Email</label>
+                <input type="email" id="senderEmail" class="field-input" placeholder="e.g. jsmith@university.edu" required>
+              </div>
+
+              <div class="field-group">
+                <label for="senderSubject" class="field-label">Subject</label>
+                <input type="text" id="senderSubject" class="field-input" placeholder="e.g. Systems Engineering Collaboration" required>
+              </div>
+
+              <div class="field-group">
+                <label for="senderMessage" class="field-label">Message</label>
+                <textarea id="senderMessage" class="field-input field-textarea" rows="4" placeholder="Hello Ayush, I came across your COA workbench and would like to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <span>Transmit Message</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- FOOTER                                                   -->
+  <!-- ======================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <a href="#home" class="nav-brand">
+            <span class="brand-monogram">AT</span>
+            <span class="brand-name">Ayush Thakur</span>
+          </a>
+          <p class="footer-desc">
+            Computer Science &amp; Artificial Intelligence student at <strong>Chandigarh University</strong>. Building hardware-conscious computing systems and educational architecture tools.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">Navigation</span>
+          <ul class="footer-nav-list">
+            <li><a href="#home">System Overview</a></li>
+            <li><a href="#coa-converter">COA Converter</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Technical Competencies</a></li>
+            <li><a href="#projects">GitHub Repositories</a></li>
+            <li><a href="#education">Education &amp; Journey</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-meta-col">
+          <span class="footer-heading">Institutional Profile</span>
+          <ul class="footer-credentials-list">
+            <li>Student: <strong>Ayush Thakur</strong></li>
+            <li>UID: <strong>25BAI10052</strong></li>
+            <li>University: <strong>Chandigarh University</strong></li>
+            <li>Degree: <strong>B.E. Computer Science (AI &amp; ML)</strong></li>
+            <li>Course: <strong>Computer Organization and Architecture</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; <span id="currentYear">2026</span> Ayush Thakur (25BAI10052) &bull; Chandigarh University. Built with semantic HTML, vanilla CSS, and high-performance JavaScript.</p>
+        <a href="#home" class="btn-icon" title="Return to Top" aria-label="Return to Top">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notice -->
+  <div id="toastNotice" class="toast-notice" role="status" aria-live="polite">
+    <span class="toast-badge-icon">&check;</span>
+    <span id="toastNoticeText">Action completed</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
