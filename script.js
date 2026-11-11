@@ -695,6 +695,9 @@ function initAssignmentFeatures() {
 
   // Collapsible Q&A Drawer Toggle
   toggleQaBtns.forEach(btn => {
+    const labelSpan = btn.querySelector('.qa-toggle-label');
+    const originalText = labelSpan ? labelSpan.textContent.trim() : 'Details';
+
     btn.addEventListener('click', () => {
       const targetId = btn.getAttribute('data-target');
       const drawer = document.getElementById(targetId);
@@ -704,12 +707,12 @@ function initAssignmentFeatures() {
       if (isHidden) {
         drawer.removeAttribute('hidden');
         btn.classList.add('active');
-        btn.querySelector('.qa-toggle-label').textContent = 'Hide Questions';
-        showToast('Viewing COA Assignment 1 questions breakdown');
+        if (labelSpan) labelSpan.textContent = 'Hide Breakdown';
+        showToast(Viewing );
       } else {
         drawer.setAttribute('hidden', '');
         btn.classList.remove('active');
-        btn.querySelector('.qa-toggle-label').textContent = '12 Questions Breakdown';
+        if (labelSpan) labelSpan.textContent = originalText;
       }
     });
   });

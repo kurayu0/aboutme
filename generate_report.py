@@ -313,7 +313,7 @@ def build_pdf(filename="Ayush_Thakur_Project_Report.pdf"):
         [Paragraph("3.0", style_table_cell_code), Paragraph("CPU Datapath &amp; ALU Simulator", style_table_cell), Paragraph("8-bit bus, registers A/B/ACC, condition flags (Z, C, S), function units.", style_table_cell)],
         [Paragraph("4.0", style_table_cell_code), Paragraph("COA Number System Converter", style_table_cell), Paragraph("BigInt math, fractional radix point algorithm, sanitization engine.", style_table_cell)],
         [Paragraph("5.0", style_table_cell_code), Paragraph("Project Repositories &amp; Implementations", style_table_cell), Paragraph("Instruction set simulator, object detector, port scanner, Tetris, C system.", style_table_cell)],
-        [Paragraph("6.0", style_table_cell_code), Paragraph("Academic Assignments Suite", style_table_cell), Paragraph("COA Assignment 1, CIRM research methodology, entrepreneurship framework.", style_table_cell)],
+        [Paragraph("6.0", style_table_cell_code), Paragraph("Academic Assignments Suite", style_table_cell), Paragraph("COA Assignment 1 (Systems & Hardware) and Assignment 2 (RISC vs CISC Case Study).", style_table_cell)],
         [Paragraph("7.0", style_table_cell_code), Paragraph("Mathematical &amp; Algorithmic Logic", style_table_cell), Paragraph("Radix polynomials, 2's complement negation, status flag Boolean formulas.", style_table_cell)],
         [Paragraph("8.0", style_table_cell_code), Paragraph("Verification &amp; Test Matrix", style_table_cell), Paragraph("Boundary conditions, radix conversion benchmarks, Lighthouse 100/100 score.", style_table_cell)],
         [Paragraph("9.0", style_table_cell_code), Paragraph("Conclusion &amp; Future Scope", style_table_cell), Paragraph("Pipelining simulation, RISC-V extensions, pedagogical reflections.", style_table_cell)]
@@ -361,7 +361,7 @@ def build_pdf(filename="Ayush_Thakur_Project_Report.pdf"):
         "<b>Educational Interactivity:</b> Provide university students with visual, interactive models of Von Neumann CPU datapath, registers, and condition codes that are usually taught only statically in textbooks.",
         "<b>Robust Mathematical Precision:</b> Overcome the flaws of conventional online base converters by supporting arbitrary-precision integers via BigInt and accurate fractional radix-point conversions without floating-point distortion.",
         "<b>Zero-Dependency Engineering:</b> Eliminate framework bloat (React, Next.js, Webpack) by using semantic HTML5, pure CSS custom variables, and native ES6+ JavaScript for sub-50ms paint times and zero security vulnerabilities.",
-        "<b>Coursework &amp; Deliverables Showcase:</b> Unify academic assignments across COA, Research Methodology, and Entrepreneurship into an integrated university portal."
+        "<b>Coursework &amp; Deliverables Showcase:</b> Unify academic coursework and microarchitecture case studies for Computer Organization and Architecture (COA) into an integrated university portal."
     ]
     for obj in objectives:
         story.append(Paragraph(f"&bull; {obj}", style_body))
@@ -616,21 +616,16 @@ def build_pdf(filename="Ayush_Thakur_Project_Report.pdf"):
     ))
 
     assignments_summary_data = [
-        [Paragraph("<b>Course</b>", style_table_header), Paragraph("<b>Assignment Title</b>", style_table_header), Paragraph("<b>Scope &amp; Evaluated Concepts</b>", style_table_header)],
+        [Paragraph("<b>Course / Unit</b>", style_table_header), Paragraph("<b>Assignment &amp; Document</b>", style_table_header), Paragraph("<b>Scope &amp; Microarchitectural Breakdown</b>", style_table_header)],
         [
-            Paragraph("<b>COA</b><br/>(Comp. Org. &amp; Arch.)", style_table_cell),
-            Paragraph("<b>Assignment 1: Modern Systems &amp; Hardware</b>", style_table_cell),
-            Paragraph("Raspberry Pi Gen 1 ARM architecture, Yotta Cloud AI GPU clusters, AI Impact Summit 2026 insights, RAM size vs Word size (64-bit), CPU vs GPU vs TPU parallel computing, 2025 Turing Award in Reinforcement Learning, distributed Stampeding Herd caching problem, and Laptop General Register Organization (16 GPRs).", style_table_cell)
+            Paragraph("<b>COA Unit 1</b><br/>(Comp. Org. &amp; Arch.)", style_table_cell),
+            Paragraph("<b>COA Assignment 1: Computing Systems &amp; Parallel Architectures</b><br/><i>Ayush_Thakur_25BAI10052  COA -1.pdf</i>", style_table_cell),
+            Paragraph("Analysis of Raspberry Pi Gen 1 ARM processor, Yotta Cloud AI GPU clusters, AI Impact Summit 2026 takeaways, RAM vs 64-bit word sizes, CPU vs GPU vs TPU parallel compute, 2025 Turing Award in Reinforcement Learning, distributed Stampeding Herd caching mitigations, and laptop General Register Organization (16 GPRs). Features an interactive 12-question breakdown drawer.", style_table_cell)
         ],
         [
-            Paragraph("<b>CIRM</b><br/>(Research Method.)", style_table_cell),
-            Paragraph("<b>Research Problem Formulation</b>", style_table_cell),
-            Paragraph("Systematic inquiry processes, empirical problem definition, research question derivation, hypothesis formulation, quantitative and qualitative validation frameworks in AI research.", style_table_cell)
-        ],
-        [
-            Paragraph("<b>Entrepreneurship</b><br/>(Innovation Skills)", style_table_cell),
-            Paragraph("<b>Business Model Innovation</b>", style_table_cell),
-            Paragraph("Opportunity discovery, tech venture validation, business model canvas formulation, risk mitigation, resource marshalling, and scaling sustainable technology organizations.", style_table_cell)
+            Paragraph("<b>COA Case Study</b><br/>(Microarchitecture)", style_table_cell),
+            Paragraph("<b>COA Assignment 2: RISC vs. CISC Processor Selection</b><br/><i>RISC_vs_CISC_Assignment 2.pdf (13 Pages)</i>", style_table_cell),
+            Paragraph("A 13-page monograph evaluating processor design for battery-powered devices. Compares RISC vs CISC across fixed-length vs variable-length decoding, Load/Store memory architecture, addressing modes, power/thermal dissipation, modern CISC micro-op (&mu;-op) translation, and empirical selection criteria for mobile &amp; IoT devices.", style_table_cell)
         ]
     ]
     assign_table = Table(assignments_summary_data, colWidths=[90, 130, 284])

@@ -29,9 +29,7 @@ A precision-engineered personal portfolio and interactive laboratory suite craft
 
 3. **Academic & Semester Assignments Suite:**
    - **COA Assignment 1:** Computing systems, Raspberry Pi ARM architecture, Yotta Cloud AI GPUs, AI Impact Summit 2026 insights, RAM vs 64-bit Word Size, CPU vs GPU vs Google TPU, 2025 Turing Award in Reinforcement Learning, distributed Stampeding Herd caching, and General Register Organization (16 GPRs). Features an **interactive 12-question technical breakdown drawer**!
-   - **Critical Enquiry & Research Methodology (CIRM):** Research problem formulation, empirical scientific inquiry, hypothesis design, literature synthesis, and quantitative evaluation.
-   - **Entrepreneurship Skills (ES):** Business model canvas, tech venture validation, risk mitigation, resource marshalling, and scaling sustainable tech startups.
-   - **COA Laboratory Practical Suite:** Digital logic multi-base converter and simulated 8-bit CPU datapath condition flag analysis.
+   - **COA Assignment 2 (Microarchitecture Case Study):** 13-page academic monograph evaluating RISC vs CISC processor selection for battery-powered devices, Load/Store architecture, fixed vs variable length decoding, silicon footprint, and power/thermal constraints. Features an **interactive 12-section case study breakdown drawer**!
    - 1-click PDF view and direct download buttons for all submissions.
 
 4. **Publication-Grade Project Report (PDF):**
