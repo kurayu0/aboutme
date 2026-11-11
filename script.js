@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeroAluWorkbench();
   initSimpleCoaConverter();
   initProjectFilters();
+  initAssignmentFeatures();
   initContactForm();
   initCvDownload();
   initCopyrightYear();
@@ -660,4 +661,56 @@ function initCopyrightYear() {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+}
+
+
+/* ===================================================================
+   6.5. ACADEMIC ASSIGNMENTS FILTERING & INTERACTIVE Q&A DRAWER
+   =================================================================== */
+function initAssignmentFeatures() {
+  const filterTabs = document.querySelectorAll('.assignment-filter-tab');
+  const assignmentCards = document.querySelectorAll('.assignment-card');
+  const toggleQaBtns = document.querySelectorAll('.toggle-qa-btn');
+
+  // Category Filtering
+  filterTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      filterTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      const filter = tab.getAttribute('data-assign-filter');
+
+      assignmentCards.forEach(card => {
+        const category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = 'flex';
+          card.style.opacity = '1';
+        } else {
+          card.style.display = 'none';
+          card.style.opacity = '0';
+        }
+      });
+    });
+  });
+
+  // Collapsible Q&A Drawer Toggle
+  toggleQaBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const drawer = document.getElementById(targetId);
+      if (!drawer) return;
+
+      const isHidden = drawer.hasAttribute('hidden');
+      if (isHidden) {
+        drawer.removeAttribute('hidden');
+        btn.classList.add('active');
+        btn.querySelector('.qa-toggle-label').textContent = 'Hide Questions';
+        showToast('Viewing COA Assignment 1 questions breakdown');
+      } else {
+        drawer.setAttribute('hidden', '');
+        btn.classList.remove('active');
+        btn.querySelector('.qa-toggle-label').textContent = '12 Questions Breakdown';
+      }
+    });
+  });
 }
